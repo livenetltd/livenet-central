@@ -39,14 +39,14 @@ class MyHeader extends LitElement {
             <div class="header-padding">
             <div class="header-l">
                 <a href="/">
-                ${this.loadIcon('src/assets/logo.html', 'logo')}
+                ${this.loadIcon('src/assets/logo.svg', 'logo')}
                 ${this.logo}
                 </a>
             </div>
             <div class="header-r">
-                ${this.loadIcon('src/assets/notification.html', 'notification')}
+                ${this.loadIcon('src/assets/notification.svg', 'notification')}
                 ${this.notification}
-                ${this.loadIcon('src/assets/menu.html', 'menu')}
+                ${this.loadIcon('src/assets/menu.svg', 'menu')}
                 ${this.menu}
             </div>
             </div>

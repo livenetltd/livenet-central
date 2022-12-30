@@ -30,9 +30,9 @@ export class MyCard extends LitElement {
         <div class="container">
             <div class="card-l">
             ${
-              this.title === 'Tráfego' ? this.loadIcon('src/assets/world.html')
-              : this.title === 'Títulos' ? this.loadIcon('src/assets/money.html')
-              : this.loadIcon('src/assets/letter.html')
+              this.title === 'Tráfego' ? this.loadIcon('src/assets/world.svg')
+              : this.title === 'Títulos' ? this.loadIcon('src/assets/money.svg')
+              : this.loadIcon('src/assets/letter.svg')
             }
             ${this.icon}
             <h3>${this.title}</h3>
