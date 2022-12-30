@@ -10,74 +10,28 @@
     />
     <meta name="robots" content="index, nofollow" />
     <title>LiveNet - Central</title>
-    <link rel="stylesheet" href="src/css/pages/index.css" />
+    <link rel="stylesheet" href="src/styles/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <script data-main="src/r.config.js" src="src/r.js"></script>
     <script type="module" src="src/components/alert.js"></script>
+    <script type="module" src="src/components/card.js"></script>
     <script type="module" src="src/components/footer.js"></script>
     <script type="module" src="src/components/header.js"></script>
-    <script type="module" src="src/components/card.js"></script>
+    <script type="module" src="src/components/loadScreen.js"></script>
+    <script type="module" src="pages/index/index.js"></script>
+    
   </head>
   <body>
+    <my-load></my-load>
     <my-header></my-header>
     <div class="top-screen-margin"></div>
     <div class="app">
-      <my-alert title="Acesso Bloqueado!"></my-alert>
-      <section class="atalhos">
-        <h2>Atalhos</h2>
-        <my-card title="Tráfego" value="24MB"></my-card>
-        <my-card title="Financeiro" value="002" color="blue-2"></my-card>
-        <my-card title="Suporte" value="005" color="blue-3"></my-card>
-      </section>
-      <section class="ultimas-faturas">
-        <h2>Últimas Faturas</h2>
-        <table class="table">
-          <colgroup>
-            <col class="col" />
-            <col class="col" />
-            <col class="col" />
-          </colgroup>
-          <tr class="table-head">
-            <th>Valor</th>
-            <th>Vencimento</th>
-            <th>Status</th>
-          </tr>
-          <tr class="table-body">
-            <td>R$100,00</td>
-            <td>15/01/2023</td>
-            <td><a href="#">Pago</a></td>
-          </tr>
-          <tr class="table-body">
-            <td>R$100,00</td>
-            <td>15/02/2023</td>
-            <td><a href="#">Aberto</a></td>
-          </tr>
-          <tr class="table-body">
-            <td>R$100,00</td>
-            <td>15/03/2023</td>
-            <td><a href="#">Aberto</a></td>
-          </tr>
-          <tr class="table-body">
-            <td>R$100,00</td>
-            <td>15/04/2023</td>
-            <td><a href="#">Aberto</a></td>
-          </tr>
-          <tr class="table-body">
-            <td>R$100,00</td>
-            <td>15/05/2023</td>
-            <td><a href="#">Aberto</a></td>
-          </tr>
-          <tr class="table-body">
-            <td>R$100,00</td>
-            <td>15/06/2023</td>
-            <td><a href="#">Aberto</a></td>
-          </tr>
-        </table>
-      </section>
+      <my-index></my-index>
     </div>
     <my-footer></my-footer>
   </body>

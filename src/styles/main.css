@@ -17,7 +17,6 @@ ul,
 li {
   margin: 0;
   padding: 0;
-  color: var(--blue-4);
 }
 ul {
   list-style: none;
@@ -30,8 +29,8 @@ a:hover {
   font-family: 'Rubik';
   color: var(--blue-4);
 }
-body, html {
-  min-width: 100%;
+body {
+  width: 100%;
   margin: 0;
   background-color: var(--white);
   font-size: var(--size);
@@ -40,6 +39,7 @@ body, html {
   padding-top: 15vh;
   background-color: var(--white);
 }
+
 .app {
   display: flex;
   flex-direction: column;
@@ -47,4 +47,15 @@ body, html {
   width: 100%;
   min-height: 85vh;
   background-color: var(--white);
+}
+.app > section:not(:last-child) {
+  margin-bottom: 10em;
+}
+.btn.primary {
+  border: none;
+  background-color: var(--blue-1);
+  color: var(--white);
+  min-width: 127px;
+  padding: 0.75em 1em;
+  border-radius: 2em;
 }
