@@ -20,17 +20,11 @@ class MyHeader extends LitElement {
                 const parser = new DOMParser()
                 const svg = parser.parseFromString(txt, "text/html");
                 const element = html`${svg.querySelector('svg')}`
-
-                variable === "logo" ? this.logo = element
-                : variable === "menu" ? this.menu = element
-                : variable === "notification" ? this.notification = element
-                : variable === "home" ? this.home = element
-                : variable === "money" ? this.money = element
-                : variable === "world" ? this.world = element
-                : variable === "letter" ? this.letter = element
-                : variable === "exit" ? this.exit = element
-                : ""
+                
+                this[variable] = element
         })
+
+        return this[variable]
     }
 
     render() {
@@ -40,14 +34,11 @@ class MyHeader extends LitElement {
             <div class="header-l">
                 <a href="/">
                 ${this.loadIcon('src/assets/logo.svg', 'logo')}
-                ${this.logo}
                 </a>
             </div>
             <div class="header-r">
                 ${this.loadIcon('src/assets/notification.svg', 'notification')}
-                ${this.notification}
                 ${this.loadIcon('src/assets/menu.svg', 'menu')}
-                ${this.menu}
             </div>
             </div>
         </header>
